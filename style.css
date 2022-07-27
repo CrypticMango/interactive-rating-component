@@ -18,6 +18,69 @@ body {
 	justify-content: center;
 	margin: 0;
 	min-height: 100vh;
+	font-size: 15px;
+}
+
+p, h2 {
+	padding: 0px 20px;
+}
+
+p {
+	color: var(--light-grey);
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.rating-start, .thank-you-page {
+	background-color: var(--dark-blue);
+	width: 325px;
+	height: 350px;
+	border-radius: 15px;
+}
+
+.thank-you-page {
+	display: none;
+}
+
+.star-icon {
+	background-color: hsl(220, 15%, 55%,20%);
+    padding: 12px;
+    border-radius: 50%;
+    height: 15px;
+	width: 15px;
+	margin: 20px 0px 0px 20px;
+}
+
+.rating-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-evenly;
+}
+
+#rating-1, #rating-2, #rating-3, #rating-4, #rating-5 {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid var(--medium-grey);
+	padding: 0;
+	font-family: 'Overpass', sans-serif;
+	background-color: var(--dark-blue);
+	color: var(--light-grey);
+	padding-top: 2px;
+}
+
+#submit-button {
+	width: 280px;
+	height: 45px;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 700;
+	color: white;
+	background-color: var(--orange);
+	border-radius: 40px;
+	border: 1px solid var(--orange);
+	margin: 20px 0px 0px 20px;
 }
 
 .attribution {
