@@ -1,0 +1,1 @@
+let submitButton = getElementById('submit-button');

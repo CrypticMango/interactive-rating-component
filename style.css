@@ -60,7 +60,7 @@ button:hover {
 	justify-content:space-evenly;
 }
 
-#rating-1, #rating-2, #rating-3, #rating-4, #rating-5 {
+.rating-button {
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
@@ -72,7 +72,7 @@ button:hover {
 	padding-top: 2px;
 }
 
-#rating-1:hover, #rating-2:hover, #rating-3:hover, #rating-4:hover, #rating-5:hover {
+.rating-button:hover {
 	background-color: var(--orange);
 	border: 1px solid var(--orange);
 	color: white;
