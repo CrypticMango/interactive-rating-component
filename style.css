@@ -22,30 +22,31 @@ body {
 }
 
 p, h2 {
-	padding: 0px 20px;
+	padding: 0px 0px 0px 20px;
 }
 
 p {
 	color: var(--light-grey);
+	margin-bottom: 20px;
+	margin-top: 0px;
+	line-height: 22px;
 }
 
 button:hover {
 	cursor: pointer;
 }
 
+/*rating card start*/
+
 .rating-start, .thank-you-page {
-	background-color: var(--dark-blue);
-	width: 325px;
+	background: radial-gradient(circle at top,#252d37,#17191d);
+	width: 330px;
 	height: 350px;
 	border-radius: 15px;
 }
 
-.thank-you-page {
-	display: none;
-}
-
 .star-icon {
-	background-color: hsl(220, 15%, 55%,20%);
+	background-color: rgba(48, 58, 68, 0.712);
     padding: 12px;
     border-radius: 50%;
     height: 15px;
@@ -60,10 +61,10 @@ button:hover {
 }
 
 #rating-1, #rating-2, #rating-3, #rating-4, #rating-5 {
-	width: 40px;
-	height: 40px;
+	width: 45px;
+	height: 45px;
 	border-radius: 50%;
-	border: 1px solid var(--medium-grey);
+	border: 1px solid var(--dark-blue);
 	padding: 0;
 	font-family: 'Overpass', sans-serif;
 	background-color: var(--dark-blue);
@@ -71,21 +72,42 @@ button:hover {
 	padding-top: 2px;
 }
 
+#rating-1:hover, #rating-2:hover, #rating-3:hover, #rating-4:hover, #rating-5:hover {
+	background-color: var(--orange);
+	border: 1px solid var(--orange);
+	color: white;
+}
+
 #submit-button {
 	width: 280px;
 	height: 45px;
 	font-family: 'Overpass', sans-serif;
-	font-weight: 700;
 	color: white;
 	background-color: var(--orange);
 	border-radius: 40px;
 	border: 1px solid var(--orange);
-	margin: 20px 0px 0px 20px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	letter-spacing: 2px;
 }
+
+#submit-button:hover {
+	background-color: white;
+	color: var(--orange);
+	border: 1px solid white;
+}
+
+/*rating card end*/
+
+/*thank you card start*/
+
+/*thank you card end*/
 
 .attribution {
 	font-size: 11px;
 	text-align: center;
+	margin-top: 20px;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
