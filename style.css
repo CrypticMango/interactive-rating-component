@@ -21,7 +21,7 @@ body {
 	font-size: 15px;
 }
 
-p, h2 {
+p {
 	padding: 0px 0px 0px 20px;
 }
 
@@ -101,6 +101,41 @@ button:hover {
 /*rating card end*/
 
 /*thank you card start*/
+
+.thank-you-page {
+	display: none;	
+}
+
+.thank-you-smartphone {
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	
+}
+
+#selected-rating {
+	color: var(--orange);
+	text-align: center;
+	background-color: var(--dark-blue);
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 170px;
+	border-radius: 20px;
+	padding: 7px 0px 5px 0px;
+}
+
+.thank-you-page p, h2 {
+	text-align: center;
+}
+
+.thank-you-page h2 {
+	padding: 0px;
+}
+
+.thank-you-page p {
+	padding: 0px 0px 0px 0px;
+}
 
 /*thank you card end*/
 
