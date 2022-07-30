@@ -21,6 +21,8 @@ function pressedSubmit() {
 
 function pressedRating() {
     //when a rating number is pressed insert the number into the thank you page.
-    alert('you have pressed a rating button');
+    //alert('you have pressed a rating button');
+    let ratingNumber = getElementsByClassName("rating-button");
+    
 }
 
