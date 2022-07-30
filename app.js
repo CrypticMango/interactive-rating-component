@@ -1,7 +1,7 @@
 //THIS WORKS!! YAS!!! :D
 
 //TO DO
-//-insert rating number into thank you pages when submit is pressed
+//-insert rating number into thank you page when submit is pressed
 //-when submit is pressed, show thank you page and hide rating page ✔
 //-bring user back to main page after thank you page has been shown
 //-when rating button is clicked, should be light grey before submitting
@@ -20,6 +20,7 @@ function pressedSubmit() {
 }
 
 function pressedRating() {
+    //when a rating number is pressed insert the number into the thank you page.
     alert('you have pressed a rating button');
 }
 
