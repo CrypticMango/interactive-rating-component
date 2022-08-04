@@ -54,13 +54,13 @@ button:hover {
 	margin: 20px 0px 0px 20px;
 }
 
-.rating-buttons {
+.rating-buttons-container {
 	display: flex;
 	flex-direction: row;
 	justify-content:space-evenly;
 }
 
-#rating-button-one, #rating-button-two, #rating-button-three, #rating-button-four, #rating-button-five  {
+.rating-button {
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
@@ -72,11 +72,13 @@ button:hover {
 	padding-top: 2px;
 }
 
-#rating-button-one:hover, #rating-button-two:hover, #rating-button-three:hover, #rating-button-four:hover, #rating-button-five:hover {
+.rating-button:hover {
 	background-color: var(--orange);
 	border: 1px solid var(--orange);
 	color: white;
 }
+
+
 
 #submit-button {
 	width: 280px;
