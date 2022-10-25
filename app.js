@@ -29,3 +29,37 @@ function returnToMain() {
 }
 
 setTimeout(returnToMain, 25000);
+
+//insert rating number
+
+let buttonOne = document.getElementById("button-one");
+let buttonTwo = document.getElementById("button-two");
+let buttonThree = document.getElementById("button-three");
+let buttonFour = document.getElementById("button-four");
+let buttonFive = document.getElementById("button-five");
+
+buttonOne.addEventListener("click", numberOne);
+buttonTwo.addEventListener("click", numberTwo);
+buttonThree.addEventListener("click", numberThree);
+buttonFour.addEventListener("click", numberFour);
+buttonFive.addEventListener("click", numberFive);
+
+function numberOne() {
+	document.getElementById("rating-number").innerHTML = 1;
+}
+
+function numberTwo() {
+	document.getElementById("rating-number").innerHTML = 2;
+}
+
+function numberThree() {
+	document.getElementById("rating-number").innerHTML = 3;
+}
+
+function numberFour() {
+	document.getElementById("rating-number").innerHTML = 4;
+}
+
+function numberFive() {
+	document.getElementById("rating-number").innerHTML = 5;
+}
