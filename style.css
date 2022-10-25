@@ -7,6 +7,9 @@
 	--very-dark-blue: hsl(216, 12%, 8%);
 }
 
+main {
+	display: contents;
+}
 
 body {
 	font-family: 'Overpass', sans-serif;
