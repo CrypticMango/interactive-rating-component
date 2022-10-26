@@ -4,9 +4,8 @@
 //-bring user back to main page after thank you page has been shown ✔
 //-when rating button is clicked, should be light grey before submitting ✔
 
-let submitButton = document.getElementById("submit-button");
-let placeholderNumber = 3;
-let ratingNumber = document.querySelector(".rating-number");
+const submitButton = document.getElementById("submit-button");
+const ratingNumber = document.querySelector(".rating-number");
 
 //handles submit button----------------------------------
 
@@ -32,34 +31,13 @@ setTimeout(returnToMain, 25000);
 
 //insert rating number
 
-let buttonOne = document.getElementById("button-one");
-let buttonTwo = document.getElementById("button-two");
-let buttonThree = document.getElementById("button-three");
-let buttonFour = document.getElementById("button-four");
-let buttonFive = document.getElementById("button-five");
+const ratings = document.querySelectorAll('.rating-button')
 
-buttonOne.addEventListener("click", numberOne);
-buttonTwo.addEventListener("click", numberTwo);
-buttonThree.addEventListener("click", numberThree);
-buttonFour.addEventListener("click", numberFour);
-buttonFive.addEventListener("click", numberFive);
+ratings.forEach ((rate) => { 
+	rate.addEventListener('click', () => {result.innerHTML = rate.innerHTML})
+});
 
-function numberOne() {
-	document.getElementById("rating-number").innerHTML = 1;
-}
 
-function numberTwo() {
-	document.getElementById("rating-number").innerHTML = 2;
-}
+//const rates = document.querySelectorAll('.btn');
 
-function numberThree() {
-	document.getElementById("rating-number").innerHTML = 3;
-}
-
-function numberFour() {
-	document.getElementById("rating-number").innerHTML = 4;
-}
-
-function numberFive() {
-	document.getElementById("rating-number").innerHTML = 5;
-}
+//rates.forEach((rate) => { rate.addEventListener('click', () => { result.innerHTML = rate.innerHTML }) })
