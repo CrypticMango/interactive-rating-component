@@ -5,7 +5,7 @@
 //-when rating button is clicked, should be light grey before submitting ✔
 
 const submitButton = document.getElementById("submit-button");
-const ratingNumber = document.querySelector(".rating-number");
+let ratingNumber = document.getElementById("rating-number")
 
 //handles submit button----------------------------------
 
@@ -33,11 +33,6 @@ setTimeout(returnToMain, 25000);
 
 const ratings = document.querySelectorAll('.rating-button')
 
-ratings.forEach ((rate) => { 
-	rate.addEventListener('click', () => {result.innerHTML = rate.innerHTML})
+ratings.forEach ((rating) => { 
+	rating.addEventListener('click', () => {ratingNumber.innerHTML = rating.innerHTML})
 });
-
-
-//const rates = document.querySelectorAll('.btn');
-
-//rates.forEach((rate) => { rate.addEventListener('click', () => { result.innerHTML = rate.innerHTML }) })
