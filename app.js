@@ -5,7 +5,7 @@
 //-when rating button is clicked, should be light grey before submitting ✔
 
 const submitButton = document.getElementById("submit-button");
-let ratingNumber = document.getElementById("rating-number")
+let ratingNumber = document.getElementById("rating-number");
 
 //handles submit button----------------------------------
 
