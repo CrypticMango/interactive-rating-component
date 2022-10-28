@@ -1,9 +1,3 @@
-//TO DO
-//-insert rating number into thank you page when submit is pressed
-//-when submit is pressed, show thank you page and hide rating page ✔
-//-bring user back to main page after thank you page has been shown ✔
-//-when rating button is clicked, should be light grey before submitting ✔
-
 const submitButton = document.getElementById("submit-button");
 let ratingNumber = document.getElementById("rating-number");
 
